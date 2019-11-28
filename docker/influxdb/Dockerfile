@@ -6,5 +6,5 @@ RUN apt-get update && apt-get upgrade --yes && apt-get --yes install \
     gnupg \
     wget
 
-RUN ["wget", "https://dl.influxdata.com/influxdb/releases/influxdb_1.7.4_amd64.deb"]
-RUN ["dpkg", "-i", "influxdb_1.7.4_amd64.deb"]
+RUN ["wget", "https://dl.influxdata.com/influxdb/releases/influxdb-1.7.9_linux_armhf.tar.gz"]
+RUN ["tar", "xvfz", "influxdb-1.7.9_linux_armhf.tar.gz"]
